@@ -36,13 +36,32 @@ hippo_memory_package/
 │   ├── universal_memory.py  # Universal Memory (범용 인터페이스)
 │   └── README.md            # 모듈 설명서
 │
+├── examples/                 # 예시 코드
+│   ├── basic_usage.py       # 기본 사용 예시
+│   └── universal_memory_demo.py  # 범용 메모리 데모
+│
+├── tests/                    # 테스트 코드
+│   ├── test_place_cells.py  # Place Cells 테스트
+│   └── test_universal_memory.py  # Universal Memory 테스트
+│
+├── benchmarks/               # 벤치마크 코드
+│   ├── place_context_revisit_test.py  # Place/Context 재방문 테스트
+│   └── context_split_test.py  # Context 분리 테스트
+│
 ├── docs/                     # 문서
 │   ├── HIPPOCAMPUS_COMPLETION.md
 │   ├── HIPPOCAMPUS_UTILIZATION_GUIDE.md
 │   ├── HIPPOCAMPUS_CEREBELLUM_INTEGRATION.md
 │   └── HIPPOCAMPUS_FOLDER_INFO.md
 │
-└── README.md                # 이 파일
+├── README.md                 # 메인 README
+├── QUICK_START.md            # 빠른 시작 가이드
+├── PACKAGE_STRUCTURE.md      # 패키지 구조 문서
+├── INSTALL.md                # 설치 가이드
+├── SUMMARY.md                # 최종 요약
+├── requirements.txt          # 의존성
+├── setup.py                  # 설치 파일
+└── LICENSE                   # MIT License
 ```
 
 ---
