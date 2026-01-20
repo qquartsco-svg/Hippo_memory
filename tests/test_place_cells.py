@@ -48,7 +48,14 @@ class TestPlaceCells(unittest.TestCase):
         
         self.assertIsNotNone(place_memory.place_center)
         self.assertIsNotNone(place_memory.bias_estimate)
-        np.testing.assert_array_almost_equal(place_memory.bias_estimate, bias * 0.1, decimal=5)
+        # 첫 방문 시에는 bias가 그대로 저장됨 (learning_rate 적용 안 됨)
+        np.testing.assert_array_almost_equal(place_memory.bias_estimate, bias, decimal=5)
+        
+        # 두 번째 방문 시에는 learning_rate가 적용됨
+        new_bias = np.array([0.002, 0.003, 0.0, 0.0, 0.0])
+        place_memory.update_bias(new_bias, learning_rate=0.1)
+        expected = 0.1 * new_bias + 0.9 * bias
+        np.testing.assert_array_almost_equal(place_memory.bias_estimate, expected, decimal=5)
     
     def test_place_blending(self):
         """Place Blending 테스트"""
