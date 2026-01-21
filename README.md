@@ -307,3 +307,15 @@ MIT License
 
 **마지막 업데이트**: 2026-01-20
 
+---
+
+## 🧠 Memory Layers (Concept Alignment)
+
+This project uses the same **memory-layer taxonomy** as the Brain Atlas:
+
+- **L0** Ring Attractor → **Neural Intrinsic Memory** (local attractor dynamics)
+- **L1** Grid Engine → **Spatial State Representation**
+- **L2** Hippo Memory → **Contextual / Place Memory**
+- **L3** Cerebellum → **Motor Pattern Optimizer**
+
+See: `~/Desktop/Brain_Atlas/CONCEPTS_MEMORY_LAYERS.md`
